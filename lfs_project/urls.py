@@ -24,3 +24,13 @@ urlpatterns += patterns("",
     (r'^admin/', include(admin.site.urls)),
     (r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': os.path.join(DIRNAME, "media"), 'show_indexes': True }),
 )
+
+
+urlpatterns += patterns("",
+    (r'', include('lfs_facebook.urls')),
+)
+
+urlpatterns += patterns("", 
+    (r'^facebook/', include('django_facebook.urls')),     
+    (r'^accounts/', include('django_facebook.auth_urls')), #Don't add this line if you use django registration or userena for registration and auth. 
+)

@@ -36,7 +36,7 @@ DATABASES = {
 # although not all choices may be available on all operating systems.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = 'America/Chicago'
+TIME_ZONE = 'Europe/Rome'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
@@ -83,7 +83,7 @@ TEMPLATE_LOADERS = (
 )
 
 MIDDLEWARE_CLASSES = (
-    'django.middleware.csrf.CsrfViewMiddleware',
+#    'django.middleware.csrf.CsrfViewMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -100,6 +100,8 @@ TEMPLATE_DIRS = (
 )
 
 INSTALLED_APPS = (
+    "lfs_responsivetheme",
+    "lfs_facebook",
     "lfstheme",
     "compressor",
     "django.contrib.admin",
@@ -152,6 +154,7 @@ INSTALLED_APPS = (
     'paypal.standard.ipn',
     'paypal.standard.pdt',
     'gunicorn',
+    "django_facebook",
 )
 
 FORCE_SCRIPT_NAME=""
@@ -269,3 +272,27 @@ try:
     from local_settings import *
 except ImportError:
     pass
+
+FACEBOOK_APP_ID = '398437633619154'
+FACEBOOK_APP_SECRET = 'f591e61258c00531e29d2f74d8f66707'
+FACEBOOK_CANVAS_PAGE = 'https://apps.facebook.com/%s/' % FACEBOOK_APP_ID
+FACEBOOK_SCOPE = ['publish_stream']
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'django.contrib.auth.context_processors.auth',
+    'django.core.context_processors.debug',
+    'django.core.context_processors.i18n',
+    'django.core.context_processors.media',
+    'django.core.context_processors.static',
+#    'django.core.context_processors.tz', #doesn't works in django 1.3
+    'django.core.context_processors.request',
+    'django.contrib.messages.context_processors.messages',
+    'django_facebook.context_processors.facebook',
+)
+
+AUTHENTICATION_BACKENDS = (
+    'django_facebook.auth_backends.FacebookBackend',
+    'django.contrib.auth.backends.ModelBackend',
+)
+
+AUTH_PROFILE_MODULE = 'django_facebook.FacebookProfile'
