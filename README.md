@@ -20,6 +20,6 @@ How to use it?
 More information
 ==============
 
-https://pypi.python.org/pypi/django-facebook
-http://www.getlfs.com/
-http://blog.pythonanywhere.com/35/
+* https://pypi.python.org/pypi/django-facebook
+* http://www.getlfs.com/
+* http://blog.pythonanywhere.com/35/
