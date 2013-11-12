@@ -273,8 +273,10 @@ try:
 except ImportError:
     pass
 
-FACEBOOK_APP_ID = ''
+#insert your facebook_app credentials
+FACEBOOK_APP_ID = '' 
 FACEBOOK_APP_SECRET = ''
+
 FACEBOOK_CANVAS_PAGE = 'https://apps.facebook.com/%s/' % FACEBOOK_APP_ID
 FACEBOOK_SCOPE = ['publish_stream']
 
