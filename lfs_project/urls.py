@@ -10,6 +10,10 @@ DIRNAME = os.path.dirname(__file__)
 handler500 = 'lfs.core.views.server_error'
 
 urlpatterns = patterns("",
+    (r'', include('lfs_facebook.urls')),
+)
+
+urlpatterns += patterns("",
     (r'', include('lfs.core.urls')),
     (r'^manage/', include('lfs.manage.urls')),
 )
@@ -23,11 +27,6 @@ urlpatterns += patterns("",
 urlpatterns += patterns("",
     (r'^admin/', include(admin.site.urls)),
     (r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': os.path.join(DIRNAME, "media"), 'show_indexes': True }),
-)
-
-
-urlpatterns += patterns("",
-    (r'', include('lfs_facebook.urls')),
 )
 
 urlpatterns += patterns("", 
