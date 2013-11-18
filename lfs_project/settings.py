@@ -101,6 +101,7 @@ TEMPLATE_DIRS = (
 
 INSTALLED_APPS = (
     "lfs_facebook",
+    "lfs_facebook.catalog",
     "lfs_responsivetheme",
     "lfstheme",
     "compressor",
@@ -298,3 +299,4 @@ AUTHENTICATION_BACKENDS = (
 )
 
 AUTH_PROFILE_MODULE = 'django_facebook.FacebookProfile'
+AUTH_PROFILE_MODULE = 'lfs_facebook.LfsFbUser'
