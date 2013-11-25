@@ -11,6 +11,25 @@ How to use it?
 * virtualenv --no-site-packages . 
 * bin/pip install --upgrade setuptools
 * bin/python bootstrap.py
+* facebook settings
+  * You have to modify settings.py, where you are going to put right data for these variables:
+    ```
+
+      FACEBOOK_APP_ID = 'YOUR APP ID'
+      FACEBOOK_APP_SECRET = 'YOUR APP SECRET NUMBER'
+
+      FACEBOOK_PAGE = 'YOUR PAGE ID'
+
+      #view that required a logged user
+      VIEW_WITH_LOGIN_REQUIRED = {
+        'add-to-cart': '' #True or False,
+        'shop': '' #True or False,
+        'category': '' #True or False,
+        'product': '' #True or False,
+        'checkout': '' #True or False,
+      }
+      
+    ```
 * bin/buildout -v
 * bin/django syncdb
 * bin/django lfs_init
