@@ -300,3 +300,17 @@ AUTHENTICATION_BACKENDS = (
 
 AUTH_PROFILE_MODULE = 'django_facebook.FacebookProfile'
 AUTH_PROFILE_MODULE = 'lfs_facebook.LfsFbUser'
+
+FACEBOOK_APP_ID = 'YOUR APP ID'
+FACEBOOK_APP_SECRET = 'YOUR APP SECRET NUMBER'
+
+FACEBOOK_PAGE = 'YOUR PAGE ID'
+
+#view that required a logged user
+VIEW_WITH_LOGIN_REQUIRED = {
+    'add-to-cart': '' #True or False,
+    'shop': '' #True or False,
+    'category': '' #True or False,
+    'product': '' #True or False,
+    'checkout': '' #True or False,
+}
