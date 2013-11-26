@@ -21,7 +21,6 @@ facebook settings:
   
   You have to modify lfs_project/settings.py, where to put right data for these variables:
 
-    ```
 
       FACEBOOK_APP_ID = 'YOUR APP ID'
       FACEBOOK_APP_SECRET = 'YOUR APP SECRET NUMBER'
@@ -41,7 +40,6 @@ facebook settings:
         'checkout': '' #True or False,
       }
       
-    ```
 
   * While you’re editing lfs_project/settings.py, set your DATABASE options as you like, althought it is already set to work with sqlite3.
 
