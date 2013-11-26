@@ -19,7 +19,7 @@ $ bin/python bootstrap.py
 
 * facebook settings
 
-  * You have to modify lfs_project/settings.py, where you are going to put right data for these variables:
+  * You have to modify lfs_project/settings.py, where to put right data for these variables:
 
     ```
 
@@ -29,8 +29,8 @@ $ bin/python bootstrap.py
       FACEBOOK_PAGE = 'YOUR PAGE ID'
 
       """
-      If you set True some of these variables, the page will be visible only for the user that is authenticated; 
-      so if user isn't already authenticated, it will be immediately redirected to loggin page. 
+      If you set some of these variables as True, the page will be visible only for authenticated users; 
+      a non-authenticated user will be immediately redirected to loggin page. 
       Loggin uses facebook backend.
       """
       VIEW_WITH_LOGIN_REQUIRED = {
@@ -43,7 +43,7 @@ $ bin/python bootstrap.py
       
     ```
 
-  * While you’re editing lfs_project/settings.py, set DATABASE to your favourites options, althought is already setted to work with sqlite3.
+  * While you’re editing lfs_project/settings.py, set your DATABASE options as you like, althought it is already set to work with sqlite3.
 
 ```
 $ bin/buildout -v
