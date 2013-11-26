@@ -308,9 +308,9 @@ FACEBOOK_PAGE = 'YOUR PAGE ID'
 
 #view that required a logged user
 VIEW_WITH_LOGIN_REQUIRED = {
-    'add-to-cart': '' #True or False,
-    'shop': '' #True or False,
-    'category': '' #True or False,
-    'product': '' #True or False,
-    'checkout': '' #True or False,
+    'add-to-cart': '', #True or False
+    'shop': '', #True or False
+    'category': '', #True or False
+    'product': '', #True or False
+    'checkout': '', #True or False
 }
