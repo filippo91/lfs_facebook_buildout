@@ -8,7 +8,7 @@ How to install it?
 ```
 $ git clone https://github.com/filippo91/lfs_facebook_buildout.git
 
-$ cd lfs_facebook_buildout/lfs-installer
+$ cd lfs_facebook_buildout/
 
 $ virtualenv --no-site-packages .
 
