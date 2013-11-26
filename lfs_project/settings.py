@@ -311,3 +311,6 @@ VIEW_WITH_LOGIN_REQUIRED = {
     'product': False, #True or False
     'checkout': False, #True or False
 }
+
+#Title of the property to allowed a view for Facebook fan only
+FACEBOOK_FAN_RESERVED_PROPERTY = "Facebook Fan Reserved"
