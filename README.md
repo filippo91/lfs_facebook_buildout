@@ -12,7 +12,7 @@ How to use it?
 * bin/pip install --upgrade setuptools
 * bin/python bootstrap.py
 * facebook settings
-  * You have to modify settings.py, where you are going to put right data for these variables:
+  * You have to modify lfs_project/settings.py, where you are going to put right data for these variables:
     ```
 
       FACEBOOK_APP_ID = 'YOUR APP ID'
@@ -30,6 +30,7 @@ How to use it?
       }
       
     ```
+  * While you’re editing lfs_project/settings.py, set DATABASE to your favourites options, althought is already setted to start with sqlite3.
 * bin/buildout -v
 * bin/django syncdb
 * bin/django lfs_init
@@ -42,3 +43,4 @@ More information
 * https://pypi.python.org/pypi/django-facebook
 * http://www.getlfs.com/
 * http://blog.pythonanywhere.com/35/
+* https://github.com/redomino/lfs_responsivetheme
