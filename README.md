@@ -3,7 +3,7 @@ What is it?
 
 If you want to install Django LFS [http://www.getlfs.com/] with facebook support, you can fork this repository.
 
-How to use it?
+How to install it?
 ==============
 
 * git clone https://github.com/filippo91/lfs_facebook_buildout.git
