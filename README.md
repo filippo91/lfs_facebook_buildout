@@ -39,7 +39,7 @@ You have to modify lfs_project/settings.py, where to put right data for these va
       }
       
       #Title of the property to allowed a view for Facebook fan only
-      FAN_FAN_RESERVED_PROPERTY = "Facebook Fan Reserved"
+      FACEBOOK_FAN_RESERVED_PROPERTY = "Facebook Fan Reserved"
       
 
 While you’re editing lfs_project/settings.py, set your DATABASE options as you like, althought it is already set to work with sqlite3.
