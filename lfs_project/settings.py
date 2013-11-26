@@ -274,13 +274,6 @@ try:
 except ImportError:
     pass
 
-#insert your facebook_app credentials
-FACEBOOK_APP_ID = '' 
-FACEBOOK_APP_SECRET = ''
-
-FACEBOOK_CANVAS_PAGE = 'https://apps.facebook.com/%s/' % FACEBOOK_APP_ID
-FACEBOOK_SCOPE = ['publish_stream']
-
 TEMPLATE_CONTEXT_PROCESSORS = (
     'django.contrib.auth.context_processors.auth',
     'django.core.context_processors.debug',
@@ -301,16 +294,20 @@ AUTHENTICATION_BACKENDS = (
 AUTH_PROFILE_MODULE = 'django_facebook.FacebookProfile'
 AUTH_PROFILE_MODULE = 'lfs_facebook.LfsFbUser'
 
+#insert your facebook_app credentials
 FACEBOOK_APP_ID = 'YOUR APP ID'
 FACEBOOK_APP_SECRET = 'YOUR APP SECRET NUMBER'
 
 FACEBOOK_PAGE = 'YOUR PAGE ID'
 
+FACEBOOK_CANVAS_PAGE = 'https://apps.facebook.com/%s/' % FACEBOOK_APP_ID
+FACEBOOK_SCOPE = ['publish_stream']
+
 #view that required a logged user
 VIEW_WITH_LOGIN_REQUIRED = {
-    'add-to-cart': '', #True or False
-    'shop': '', #True or False
-    'category': '', #True or False
-    'product': '', #True or False
-    'checkout': '', #True or False
+    'add-to-cart': True, #True or False
+    'shop': False, #True or False
+    'category': False, #True or False
+    'product': False, #True or False
+    'checkout': False, #True or False
 }
