@@ -17,9 +17,9 @@ $ bin/pip install --upgrade setuptools
 $ bin/python bootstrap.py
 ```
 
-* facebook settings
-
-  * You have to modify lfs_project/settings.py, where to put right data for these variables:
+facebook settings:
+  
+  You have to modify lfs_project/settings.py, where to put right data for these variables:
 
     ```
 
