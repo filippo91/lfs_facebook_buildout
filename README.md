@@ -30,7 +30,7 @@ How to install it?
       }
       
     ```
-  * While you’re editing lfs_project/settings.py, set DATABASE to your favourites options, althought is already setted to start with sqlite3.
+  * While you’re editing lfs_project/settings.py, set DATABASE to your favourites options, althought is already setted to work with sqlite3.
 * bin/buildout -v
 * bin/django syncdb
 * bin/django lfs_init
