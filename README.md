@@ -89,7 +89,7 @@ To create a Facebook Application ID:
 
 * Click the "Save Changes" button.
 
-Now you have a Facebook Application with its ID and secret key visible at main page of application.
+Now you have a Facebook Application with its ID and secret key, you can check it at main page of application.
 
 More information
 ==============
