@@ -56,6 +56,15 @@ $ bin/django collectstatic
 
 $ bin/django runserver
 ```
+
+Features
+==============
+* With lfs_facebook you can make a product available for facebook fans only.
+   To set this feature to a product you add a lfs property(of whatever type you want) 
+   with title: "Facebook Fan Reserved". So if a user doesn't like your Facebook page, he can't
+   add to cart the specific product. 
+
+
 More information
 ==============
 
