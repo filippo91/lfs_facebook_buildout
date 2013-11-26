@@ -16,10 +16,8 @@ $ bin/pip install --upgrade setuptools
 
 $ bin/python bootstrap.py
 ```
-
-facebook settings:
   
-  You have to modify lfs_project/settings.py, where to put right data for these variables:
+You have to modify lfs_project/settings.py, where to put right data for these variables:
 
 
       FACEBOOK_APP_ID = 'YOUR APP ID'
@@ -41,7 +39,7 @@ facebook settings:
       }
       
 
-  * While you’re editing lfs_project/settings.py, set your DATABASE options as you like, althought it is already set to work with sqlite3.
+While you’re editing lfs_project/settings.py, set your DATABASE options as you like, althought it is already set to work with sqlite3.
 
 ```
 $ bin/buildout -v
@@ -63,6 +61,35 @@ Features
    with title: "Facebook Fan Reserved". So if a user doesn't like your Facebook page, he can't
    add to cart the specific product. 
 
+How do I get Facebook Application credentials?
+==============
+To create a Facebook Application ID:
+
+* Go to the Facebook Developers Apps page, and sign in with your Facebook username and password.
+
+* Click the "Create New App" button.
+
+* If you do not see the option to create a new app in the upper right hand corner, click on "Register as Developer."
+
+* Enter a name for the application in the "App Name" field. Using your store name is recommended.
+
+* Read the Facebook Platform Policies and decide if you accept them. Once you've read the Facebook Platform Policies and have entered an App Name (step 2, above), click the "Continue" button. Note that by clicking the "Continue" button, you agree to the Facebook Platform Policies.
+
+* You may be asked to verify your account by providing a mobile number or credit card number. If your Facebook account has already been verified, you may not be asked to verify your account.
+
+* You may also encounter a Captcha security check. Enter the Captcha code and click the "Continue" button.
+
+* You should now be on the Basic (Basic Settings) page for your app, where the App Name you provided in Step 2 will be shown in the "Display Name" field. Check that this name is correct, and that your contact email address is correct, and then proceed to the "App Domains" field.
+
+* Enter your domain name in the "App Domains" field (e.g. papayadayspa.com).
+
+* Next, scroll down to the "Select how your app integrates with Facebook" section of the Basic page, and click "Website with Facebook Login." This section will expand to show a "Site URL" field.
+
+* Enter your store URL in the "Site URL" field (e.g. http://www.papayadayspa.com ).
+
+* Click the "Save Changes" button.
+
+Now you have a Facebook Application with its ID and secret key visible at main page of application.
 
 More information
 ==============
