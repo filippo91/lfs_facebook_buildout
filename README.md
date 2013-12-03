@@ -86,6 +86,8 @@ To create a Facebook Application ID:
 
 Now you have a Facebook Application with its ID and secret key, you can check it at main page of application.
 
+Remember that Facebook requires https. 
+
 More information
 ==============
 
