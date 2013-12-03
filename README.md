@@ -3,6 +3,8 @@ What is it?
 
 If you want to install Django LFS [http://www.getlfs.com/] with facebook support, you can fork this repository.
 
+![ScreenShot](https://raw.github.com/filippo91/lfs_facebook_buildout/master/screenshots/facebook_lfs_product.png)
+
 How to install it?
 ==============
 ```
