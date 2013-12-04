@@ -90,10 +90,18 @@ Now you have a Facebook Application with its ID and secret key, you can check it
 
 Remember that Facebook requires https. 
 
+Credits
+==========
+* Filippo Projetto <heartbreakid91@gmail.com> (@filippo91), maker
+* Fabrizio Reale <fabrizio.reale@redomino.com> (@realefab), Project manager
+* Davide Moro <davide.moro@redomino.com> (@davidemoro), IT specialist & motivator :)
+* Andrea D'este <andrea.deste@redomino.com> (@adeste), Programmer & Designer
+
 More information
-==============
+================
 
 * https://pypi.python.org/pypi/django-facebook
 * http://www.getlfs.com/
 * http://blog.pythonanywhere.com/35/
+* https://developers.facebook.com/docs/web/
 * https://github.com/redomino/lfs_responsivetheme
