@@ -92,7 +92,7 @@ Remember that Facebook requires https.
 
 Credits
 ==========
-* Filippo Projetto <heartbreakid91@gmail.com> (@filippo91), maker
+* Filippo Projetto <heartbreakid91@gmail.com> (@filippo91), Main Author
 * Fabrizio Reale <fabrizio.reale@redomino.com> (@realefab), Project manager
 * Davide Moro <davide.moro@redomino.com> (@davidemoro), IT specialist & motivator :)
 * Andrea D'este <andrea.deste@redomino.com> (@adeste), Programmer & Designer
